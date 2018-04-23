@@ -35,4 +35,23 @@
       }
     }
   });
+  new Vue({
+    el: '.js-component05',
+    data: {
+      number: ''
+    }
+  });
+  new Vue({
+    el: '.js-component06',
+    data: {
+      text: ''
+    },
+    filters: {
+      toUpperCase: function(value){
+        if(!value) return ''
+        value=value.toString()
+        return value.toUpperCase()
+      }
+    }
+  });
 }

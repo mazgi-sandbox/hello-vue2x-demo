@@ -26,6 +26,16 @@
       <div>raw html: {{html}}</div>
       <div>html: <span v-html="html">cannot show</span></div>
     </div>
+    <hr />
+    <div class="js-component05">
+      <p><input v-model="number" type="text"></p>
+      <p>x2: {{number * 2}}</p>
+    </div>
+    <hr />
+    <div class="js-component06">
+      <p><input v-model="text" type="text"></p>
+      <p>input string (uppper case): {{text | toUpperCase}}</p>
+    </div>
 
     <script src="https://npmcdn.com/vue/dist/vue.min.js"></script>
     <script src="script.js"></script>
