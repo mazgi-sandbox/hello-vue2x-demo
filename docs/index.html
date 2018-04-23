@@ -13,6 +13,12 @@
       <p><input v-model="text" type="text"></p>
       <p>input string: {{text}}</p>
     </div>
+    <hr />
+    <div class="js-component03">
+      <p><input v-model="input" type="text"></p>
+      <p v-on:click="output">apply</p>
+      <p>input string: {{text}}</p>
+    </div>
 
     <script src="https://npmcdn.com/vue/dist/vue.min.js"></script>
     <script src="script.js"></script>
