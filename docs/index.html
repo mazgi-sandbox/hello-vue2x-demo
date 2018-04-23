@@ -4,10 +4,14 @@
     <meta charset="utf-8">
   </head>
   <body>
-
     <div class="js-component01">
       <p>mustache output: {{text}}</p>
       <p>v-text output: <span v-text="text"></span></p>
+    </div>
+    <hr />
+    <div class="js-component02">
+      <p><input v-model="text" type="text"></p>
+      <p>input string: {{text}}</p>
     </div>
 
     <script src="https://npmcdn.com/vue/dist/vue.min.js"></script>
