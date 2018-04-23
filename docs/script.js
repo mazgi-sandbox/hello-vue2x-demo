@@ -65,4 +65,20 @@
       }
     }
   });
+  new Vue({
+    el: '.js-component08',
+    data: {
+      origin: '100'
+    },
+    computed: {
+      withTax: {
+        get: function(){
+          return parseInt(this.origin * 1.08)
+        },
+        set: function(value){
+          this.origin = Math.ceil(value / 1.08);
+        }
+      }
+    }
+  });
 }
