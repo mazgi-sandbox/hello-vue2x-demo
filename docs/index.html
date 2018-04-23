@@ -19,6 +19,13 @@
       <p v-on:click="output">apply</p>
       <p>input string: {{text}}</p>
     </div>
+    <hr />
+    <div class="js-component04">
+      <p><input v-model="input" type="text"></p>
+      <p v-on:click="output">apply</p>
+      <div>raw html: {{html}}</div>
+      <div>html: <span v-html="html">cannot show</span></div>
+    </div>
 
     <script src="https://npmcdn.com/vue/dist/vue.min.js"></script>
     <script src="script.js"></script>

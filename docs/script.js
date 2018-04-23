@@ -23,4 +23,16 @@
       }
     }
   });
+  new Vue({
+    el: '.js-component04',
+    data: {
+      input: '',
+      html: ''
+    },
+    methods: {
+      output: function(){
+        this.html = '<span style="color: #fc0;">' + this.input + '</span>';
+      }
+    }
+  });
 }
