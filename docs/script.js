@@ -54,4 +54,15 @@
       }
     }
   });
+  new Vue({
+    el: '.js-component07',
+    data: {
+      number: '0'
+    },
+    computed: {
+      calc3Times: function(){
+        return this.number * 3;
+      }
+    }
+  });
 }
